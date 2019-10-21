@@ -116,9 +116,7 @@ width: 305px;
     font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
     
 }
-.card-img:hover + p {
-    color:#f26500;
-}
+
 .card-img:hover .details{
 
     display: block;
@@ -164,4 +162,7 @@ width: 305px;
 .copyright:hover{
     
     color:#ffff00;
+}
+.grad-border:hover + p {
+    color: #f26522
 }
