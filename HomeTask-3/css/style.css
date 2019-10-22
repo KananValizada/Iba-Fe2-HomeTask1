@@ -1,13 +1,17 @@
 body{
-    width: 1366px;
-    color:#fff;
     background-image: url(../img/bg.png);
     background-color: black;
     background-size:cover ;
     background-repeat: no-repeat;
     backdrop-filter: 0.5;
-    
-   
+    color:#fff;
+}
+
+
+.centered{
+    margin:0 auto;
+    width: 1366px;
+
 }
 a{
      color:white;
