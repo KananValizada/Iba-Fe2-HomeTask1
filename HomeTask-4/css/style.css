@@ -9,17 +9,21 @@ body{
     height: 56px;
     color: white;
     background-color: rgba(0,0,0,0.5);
-    top:0
+    top:0;
+    z-index: 1;
 }
 a{
     text-decoration: none;
     color: rgba(60, 184, 120, 255); 
 }
+a:hover{
+    text-decoration: underline;
+}
 .header h1 {
     float: left;
     margin-left: 150px;
     line-height: 2.3;
-    font-family: Verdana, Courier;
+    font-family: 'Lato',Courier, Verdana , sans-serif;
 font-size: 20px;
 font-weight: 700;
 }
@@ -28,7 +32,6 @@ font-weight: 700;
 }
 .header-welcome{
     float: right;
-    font-family:  Courier, Verdana;
 font-size: 14px;
 line-height: 3.5;
 margin-right: 90px;
@@ -38,8 +41,9 @@ margin-right: 90px;
 }
 .header-icons{
     display: inline-block;
-    line-height: 3.8;
+    line-height: 4.2;
     float: left;
+    margin-right: 35px;
 }
 .welcome{
     float: left;
@@ -53,17 +57,21 @@ margin-right: 90px;
     position: relative;
     top:30px;
     background-color: white;
-    margin:65px auto;
+    margin:70px auto;
     border-radius: 20px;;
     padding: 30px 60px;
     box-sizing: border-box;
+
 }
 .form-elements-header h2 {
-    font-family:  Courier, Verdana;
+    font-family: 'Lato',Courier, Verdana , sans-serif;
     font-size: 20px;
     color: rgba(67, 67, 67, 255);
     float: left;
     font-weight: 700;
+}
+.form-elements-header p a {
+    font-size: 14px
 }
 .form-elements-header{
     margin-bottom: 15px;
@@ -86,7 +94,7 @@ margin-right: 90px;
  margin: 0 9px;
 display: inline-block;
 vertical-align: -3px;
-font-family: Courier, Verdana;
+font-family: 'Lato', Courier, Verdana , sans-serif;
 font-size: 14pt;
 color: rgba(132, 132, 132, 255);
 }
@@ -113,20 +121,36 @@ color: rgba(132, 132, 132, 255);
 .terms{
     display: inline-block;
     vertical-align: -4px;
-    font-family: Courier, Verdana;
-font-size: 14pt;
+    font-family: 'Lato', Courier, Verdana , sans-serif;
+font-size: 14px;
 color: rgba(67, 67, 67, 255);
+}
+.terms a{
+    font-size: 14px;
 }
 .fb {
 float: left;
 width: 156px;
 height: 45px;
-  font-family:Courier, Verdana;
+font-family: 'Lato', Courier, Verdana , sans-serif;
 font-size: 16px;
 background-color: #264b96;
 color: white;
 border: none;
 border-radius: 7px;
+cursor: pointer;
+}
+.google{
+    border: none;
+border-radius: 7px;
+    background-color: #c3412c;
+    color: white;
+    width: 156px;
+    height: 45px;
+    float: right;
+    font-family: 'Lato', Courier, Verdana , sans-serif;
+font-size: 16px;
+cursor: pointer;
 }
 .check {
     display: inline-block;
@@ -191,17 +215,7 @@ border-radius: 7px;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-.google{
-    border: none;
-border-radius: 7px;
-    background-color: #c3412c;
-    color: white;
-    width: 156px;
-    height: 45px;
-    float: right;
-    font-family:Courier, Verdana;
-font-size: 16px;
-}
+
 .form-elements-header p {
     font-family:  Courier, Verdana;
     font-size: 14pt;
@@ -213,11 +227,12 @@ font-size: 16px;
     height: 45px;
     text-align: center;
     color: white;
-    font-family: Courier, Verdana;
+    font-family: 'Lato', Courier, Verdana , sans-serif;
 font-size: 16px;
 border: none;
 border-radius: 5px ;
 margin-top: 25px;
+cursor: pointer;
 }
 .sprite {
     background-image: url(../img/spritesheet2.png);
