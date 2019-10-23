@@ -28,7 +28,8 @@ font-size: 20px;
 font-weight: 700;
 }
 .header h1:hover{
-    color:#3cb878
+    color:#3cb878;
+    transition:0.5s;
 }
 .header-welcome{
     float: right;
@@ -38,6 +39,7 @@ margin-right: 90px;
 }
 .header-welcome a{
     color: #3cb878;
+
 }
 .header-icons{
     display: inline-block;
@@ -127,6 +129,14 @@ color: rgba(67, 67, 67, 255);
 }
 .terms a{
     font-size: 14px;
+}
+.green-square{
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top:30px;
+    left:0;
+    background-color: #3cb878;
 }
 .fb {
 float: left;
@@ -242,6 +252,7 @@ cursor: pointer;
 }
 .sprite:hover{
     background-image: url(../img/spritesheet.png);
+    transition: 0.5s;
 }
 
 
