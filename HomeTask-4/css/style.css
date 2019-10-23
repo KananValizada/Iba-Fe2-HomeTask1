@@ -1,0 +1,250 @@
+body{
+    background-image: url(../img/bg.png);
+    background-size: cover ;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    top:0
+}
+a{
+    text-decoration: none;
+    color: rgba(60, 184, 120, 255); 
+}
+.header h1 {
+    float: left;
+    margin-left: 150px;
+    line-height: 2.3;
+    font-family: Verdana, Courier;
+font-size: 20px;
+font-weight: 700;
+}
+.header h1:hover{
+    color:#3cb878
+}
+.header-welcome{
+    float: right;
+    font-family:  Courier, Verdana;
+font-size: 14px;
+line-height: 3.5;
+margin-right: 90px;
+}
+.header-welcome a{
+    color: #3cb878;
+}
+.header-icons{
+    display: inline-block;
+    line-height: 3.8;
+    float: left;
+}
+.welcome{
+    float: left;
+}
+.fab{
+    margin-right: 30px;
+}
+.form{
+    width: 444px;
+    height: 584px;
+    position: relative;
+    top:30px;
+    background-color: white;
+    margin:65px auto;
+    border-radius: 20px;;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+.form-elements-header h2 {
+    font-family:  Courier, Verdana;
+    font-size: 20px;
+    color: rgba(67, 67, 67, 255);
+    float: left;
+    font-weight: 700;
+}
+.form-elements-header{
+    margin-bottom: 15px;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.line {
+    width: 135px;
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+.optinal {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.optinal p {
+ margin: 0 9px;
+display: inline-block;
+vertical-align: -3px;
+font-family: Courier, Verdana;
+font-size: 14pt;
+color: rgba(132, 132, 132, 255);
+}
+.form-inputs input {
+    
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    
+}
+.form-inputs input:nth-child(5){
+    margin-bottom: 20px;
+}
+.form-inputs input:focus {
+    box-shadow: -1px 3px 6px 1px rgba(0,0,0,0.46);
+    transform: translateY(-3px);
+    border: none;
+    transition: 0.5s;
+}
+
+.terms{
+    display: inline-block;
+    vertical-align: -4px;
+    font-family: Courier, Verdana;
+font-size: 14pt;
+color: rgba(67, 67, 67, 255);
+}
+.fb {
+float: left;
+width: 156px;
+height: 45px;
+  font-family:Courier, Verdana;
+font-size: 16px;
+background-color: #264b96;
+color: white;
+border: none;
+border-radius: 7px;
+}
+.check {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #eaeaea;
+  }
+  
+  
+  /* When the checkbox is checked, add a blue background */
+  .check input:checked ~ .checkmark {
+    background-color: #fff;
+    border:1px solid #eaeaea;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #3cb878;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.google{
+    border: none;
+border-radius: 7px;
+    background-color: #c3412c;
+    color: white;
+    width: 156px;
+    height: 45px;
+    float: right;
+    font-family:Courier, Verdana;
+font-size: 16px;
+}
+.form-elements-header p {
+    font-family:  Courier, Verdana;
+    font-size: 14pt;
+    float: right;
+}
+.account-btn {
+    background-color: #3cb878;
+    width: 320px;
+    height: 45px;
+    text-align: center;
+    color: white;
+    font-family: Courier, Verdana;
+font-size: 16px;
+border: none;
+border-radius: 5px ;
+margin-top: 25px;
+}
+.sprite {
+    background-image: url(../img/spritesheet2.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 28px;
+}
+.sprite:hover{
+    background-image: url(../img/spritesheet.png);
+}
+
+
+
+.sprite-calendar {
+    width: 19px;
+    height: 19px;
+    background-position: -15px -15px;
+}
+
+.sprite-forum {
+    width: 28px;
+    height: 20px;
+    background-position: -64px -15px;
+}
+
+.sprite-journey {
+    width: 20px;
+    height: 20px;
+    background-position: -122px -15px;
+}
