@@ -26,10 +26,11 @@ a:hover{
     font-family: 'Lato',Courier, Verdana , sans-serif;
 font-size: 20px;
 font-weight: 700;
+transition: color 0.5s;
 }
 .header h1:hover{
     color:#3cb878;
-    transition:0.5s;
+    
 }
 .header-welcome{
     float: right;
@@ -149,6 +150,10 @@ color: white;
 border: none;
 border-radius: 7px;
 cursor: pointer;
+transition:background-color 0.5s ;
+}
+.fb:hover{
+    background-color:#1e3a74 ;
 }
 .google{
     border: none;
@@ -161,6 +166,10 @@ border-radius: 7px;
     font-family: 'Lato', Courier, Verdana , sans-serif;
 font-size: 16px;
 cursor: pointer;
+transition:background-color 0.5s ;
+}
+.google:hover{
+    background-color: #a03524;
 }
 .check {
     display: inline-block;
@@ -175,7 +184,6 @@ cursor: pointer;
     user-select: none;
   }
   
-  /* Hide the browser's default checkbox */
   .check input {
     position: absolute;
     opacity: 0;
@@ -184,41 +192,34 @@ cursor: pointer;
     width: 0;
   }
   
-  /* Create a custom checkbox */
   .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     border: 1px solid #eaeaea;
   }
   
-  
-  /* When the checkbox is checked, add a blue background */
   .check input:checked ~ .checkmark {
     background-color: #fff;
     border:1px solid #eaeaea;
   }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the checkmark when checked */
   .check input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the checkmark/indicator */
   .check .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 4px;
+    top: 2px;
     width: 5px;
-    height: 10px;
+    height: 8px;
     border: solid #3cb878;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -243,20 +244,22 @@ border: none;
 border-radius: 5px ;
 margin-top: 25px;
 cursor: pointer;
+transition:background-color 0.5s;
+}
+.account-btn:hover{
+    background-color: #268a56;
+
 }
 .sprite {
     background-image: url(../img/spritesheet2.png);
     background-repeat: no-repeat;
     display: inline-block;
     margin-right: 28px;
+    transition: background-image 0.5s;
 }
 .sprite:hover{
     background-image: url(../img/spritesheet.png);
-    transition: 0.5s;
 }
-
-
-
 .sprite-calendar {
     width: 19px;
     height: 19px;
