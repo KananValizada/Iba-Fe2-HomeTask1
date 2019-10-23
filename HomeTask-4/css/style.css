@@ -57,8 +57,9 @@ margin-right: 90px;
 .form{
     width: 444px;
     height: 584px;
-    position: relative;
-    top:30px;
+    position: absolute;
+    top: calc((100% - 644px) / 2);
+    left: calc((100% - 564px) / 2);
     background-color: white;
     margin:70px auto;
     border-radius: 20px;;
