@@ -1,23 +1,50 @@
+@font-face{
+    font-family: 'Arimo-woff';
+    src:url(../fonts/arimo.woff)
+}
+@font-face{
+    font-family: 'Arimo-tff';
+    src:url(../fonts/arimo.tff)
+}
+@font-face{
+    font-family: 'Arimo-svg';
+    src:url(../fonts/arimo.svg)
+}
+
+
 table{
     border: 30px solid #3a4965;
 text-align: center;
  vertical-align: inherit;
  text-transform: uppercase;
  margin:0 auto;
+ background-color: #fafafa;
+ color:#484848;
+ margin-top:50px
 }
-tr,td{
+tr,th,td{
     border: 1px solid #d3d3d3;
+    font-family: 'Arimo','Arimo-woff','Arimo-ttf','Arimo-svg',Courier, sans-serif;
  
 }  
 td{
    width:  275px;
    height: 70px;
-   box-shadow: 4px 0 #00000010;
+   box-shadow: 4px 0 3px #00000010;
+   border-left: hidden;
 }
 th{
     width: 310px;
-    box-shadow: inset -4px 0 #00000010;
+    box-shadow: inset -4px 0 20px #00000010;
 }
+
+h2,p,a,h6{
+    font-family: 'Arimo','Arimo-woff','Arimo-ttf','Arimo-svg',Courier, sans-serif;
+}
+tr:first-child td {
+    font-size: 24px;
+}
+
 th p {
     font-size: 18px
 }
@@ -30,13 +57,25 @@ th h2 {
     text-align: left;
     font-size:24px
 }
+.prise-part h6 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.prise-part p {
+    font-size: 18px;
+    font-weight: 400;
+}
 .prise{
     text-align: center;
     font-size: 60px;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
     background-color: #e3e3e3
+}
+tr:nth-child(2){
+    background-color:#fafafa ;
 }
 .btn{
     display: inline-block;
@@ -48,6 +87,14 @@ tr:nth-child(even) {
     background-color: #484848;
     border-radius: 10px;
     font-weight: 700;
+    position: relative;
+    transition:0.3s
+}
+.buttons th{
+    background-color: #dddddd;
+}
+.buttons td:nth-child(even){
+    background-color: #eeeeee
 }
 .lightgreen{
     background-color: #89c331;
@@ -66,7 +113,21 @@ tr:nth-child(even) {
     font-weight: 700
 }
 .buttons{
-    height: 125px
+    height: 125px;
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 190px;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.btn:hover{
+ opacity:0.7;
+
 }
 .fas, .far {
     color:#848484
