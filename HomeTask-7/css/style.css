@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+.container {
+    margin: 0 auto;
+    width: 1170px;
+    height: 720px;
+    -webkit-perspective: 100px; /* Safari 4-8  */
+    perspective: 100px;
+    overflow: hidden;
+
+
+}
+.text {
+    margin: 0 auto;
+    text-align: justify;
+color: rgb(250, 236, 40);
+width: 900px;
+    font-size: 50px;
+    height: 800px;
+    transform-origin : 0 100% 0 ;  
+transform: rotateX(13deg);
+font-weight: 700;
+
+
+}
+.text .moving-text {
+    position: absolute;
+    animation-name: resp;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.subheader ,.header {
+    text-align: center
+}
+.subheader {
+    font-size: 45px
+}
+
+
+@keyframes resp {
+    0% {
+      bottom: -700px;
+    }
+    100% {
+        bottom: 300px;
+    }
+}

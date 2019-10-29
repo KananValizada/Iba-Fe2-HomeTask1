@@ -118,7 +118,7 @@ width: 305px;
 .card-img:hover .details{
     display: block;
     animation-name: info;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 @keyframes info {
     0% { 
